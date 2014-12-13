@@ -1,28 +1,153 @@
 <!DOCTYPE html>
+<html>
+<head>
+
+<link rel="icon" type="image/icon" href="https://mac.github.com/images/check.png" />
 <title>Welcome</title>
 
+</head>
+
 <body>
+<img src="http://i.imgur.com/OL1emBf.gif" style="border-radius: 10px;" />
+
 <div class="mainContent">
 
-    <p>Waiting for permission from Christian Valise to upload a theme.. (<a href="http://1stwebdesigner.com/">1stwebdesigner.com</a>)<p>
-    
-    <p>All credit goes to Christian Valise, he is an amazing web designer.</p>
+    <h1>Maintance In Progess...</h1>
+    <p>Sorry, we're fixing things up for you! Enjoy your stay.</p>
     
 </div>
+<br />
+<br />
+<br />
 
-<div id="loading_animation"></div>
+<!--
+<div class="wrapper">
+<ul class="feature_list">
+    <li id="list">HTML Friendly</li>
+    <li id="list">CSS Friendly</li>
+    <li id="list">JavaScript Friendly</li>
+</ul>
+</div>
+-->
+
+<div class="dropDown">
+    <h3>HTML Friendly</h3>
+    <h5>Welcome to HteaML, we help with anything HTML wise.</h5>
+</div>
+
+<div class="dropDown">
+    <h3>CSS Friendly</h3>
+    <h5>Here at HteaML we also help you with CSS.</h5>
+</div>
+
+<div class="dropDown">
+    <h3>JavaScript Friendly</h3>
+    <h5>Did we forget to mention JavaScript? We did!? Well, we help wih that too!</h5>    
+</div>    
+    
+    
+    <h2>Want To Join?</h2>
+    <p>Hello person, would you like to help me in the creation of many websites to come?<br /> Well contact me via email. I will repsond A.S.A.P..</p>
+     
+    <br />  
+    <br />
+    <br />
+    
+    <p id="contact">Contact Information:</p>
+    <p class="contactContent">Email: <span>huntershutt@yahoo.com</span></p>
+    <p class="contactContent">Website: <span>Coming soon...</span><p>
 </body>
+    <p class="contactContent">Phone: <span>N/A</span></p>
+</div>
 
 <style>
-    #loading_animation {
-        background: url(http://i.imgur.com/A9RpKKe.png);
-        width: 26px;
-        height: 26px;
-        margin: 0 50% 0 50%;
+    img {
+	    width: 30%;
+    	height: auto;
+    	margin: 2% 34%;
+    }
+
+    h1 {
+        text-align: center;
+        color: black;
+    }
+
+    .contactContent {
+        color: black;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    #contact {
+        font-size: 20px;
+        color: black;
+    }
+
+    span {
+        color: #CF5C3F;
+    }
+
+    .dropDown {
+        background: #FFF;
+        border-radius: 5px;
+        margin-top: 10px;
+        width: 25%;
+        margin: 3% 38%; 
+        cursor: pointer;
+    }
+    
+    .dropDown:hover {
+        border-left: 3px solid #CF5C3F;
+    }
+    
+    h3 {
+        font-weight: bold;
+        font-family: "Helveitca Neue", Helvetica, Arial, sans-serif;
+        background: url('https://mac.github.com/images/check.png') no-repeat 0 center;
+        margin: 0 15px;
+        padding: 5px 29px;
+        display: block;
+    }
+    
+    h5 {
+        font-weight: bold;
+        font-family: "Helvetiva Neue", Helvetica, Arial, sans-serif;
+        padding: 5px;
+        margin-left: 20px;
+        padding-bottom: 20px;
+        font-size: 15px;
+    }
+    
+    body{
+        font: 15px "Helvetica Neue", Helvetica, Arial, sans-serif;
+        background-color: #DCDCDC;
+    }
+
+    .wrapper {
+        margin: 0 auto;
+        max-width: 972px;
+        padding: 0 4px;
+        position: relative;
+    }
+
+    .feature_list {
+        margin: 35px 0;
+        text-align: center;
+    }
+
+    .feature_list li {
+        list-style: none;
+        display: inline-block;
+        margin: 0 15px;
+        padding-left: 29px;
+        font-weight: bold;
+        background: url('https://mac.github.com/images/check.png') no-repeat 0 center;
     }
 
     p {
-        font-family: Century Gothic;
+        font-family: Century Gothic, Arial, sans-serif;
         font-size 72px;
         color: #333;
         font-weight: bold;
@@ -44,10 +169,18 @@
 <script src="http://spritely.net/scripts/jquery.spritely-0.6.8.js"></script>
 
 <script>
-    $('#loading_animation').sprite({ fps: 10, no_of_frames: 12 }).spStop();
-    $('#loading_animation').spStart();
-</script>
 
+$(document).ready(function(){
+    
+    $('h5').hide();
+    
+    $('h3').click(function(){
+        $(this).next().slideToggle(300); 
+    });
+    
+});
+</script>
+</html>
 
 
 
