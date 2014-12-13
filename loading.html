@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<title>Welcome</title>
+
+<body>
+<div class="mainContent">
+
+    <p>Waiting for permission from Christian Valise to upload a theme.. (<a href="http://1stwebdesigner.com/">1stwebdesigner.com</a>)<p>
+    
+    <p>All credit goes to Christian Valise, he is an amazing web designer.</p>
+    
+</div>
+
+<div id="loading_animation"></div>
+</body>
+
+<style>
+    #loading_animation {
+        background: url(http://i.imgur.com/A9RpKKe.png);
+        width: 26px;
+        height: 26px;
+        margin: 0 50% 0 50%;
+    }
+
+    p {
+        font-family: Century Gothic;
+        font-size 72px;
+        color: #333;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #CF5C3F;
+        cursor: pointer;
+    }
+    
+    .mainContent {
+        margin: 2% 25% 0 25%;
+    }
+</style>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://spritely.net/scripts/jquery.spritely-0.6.8.js"></script>
+
+<script>
+    $('#loading_animation').sprite({ fps: 10, no_of_frames: 12 }).spStop();
+    $('#loading_animation').spStart();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
