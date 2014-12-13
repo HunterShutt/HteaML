@@ -23,4 +23,4 @@ Hello, so you would like to contact me/join? Well all you need to do is email me
     Email: huntershutt@yahoo.com
     Phone: N/A
     Website: Comming soon...
-    Tumblr Blog: <a href="http://hteaml.tumblr.com/">HteaML</a>
+    Tumblr Blog: http://hteaml.tumblr.com/
